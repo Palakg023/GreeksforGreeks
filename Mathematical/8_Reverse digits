@@ -1,0 +1,22 @@
+/* https://practice.geeksforgeeks.org/problems/reverse-digit0316/1# */
+
+//code-------------------------------------------------------------------
+
+
+class Solution
+{
+	public:
+		long long int reverse_digit(long long int n)
+		{
+		    // Code here
+		    long long int r=0;
+		   
+		    while(n>0)
+		    {
+		        long long int rem = n%10;
+		        r=r*10+rem;
+		        n/=10;
+		    }
+		    return r;
+		}
+};
